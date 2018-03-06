@@ -28,6 +28,9 @@
       <div v-on:click="mark(8)" class="board" id="bot-mid">{{ boardSpot8 }}</div>
       <div v-on:click="mark(9)" class="board" id="bot-right">{{ boardSpot9 }}</div>
     </div>
+    <footer>
+      <a href="https://github.com/yakcmnoslen/creative3">GitHub</a>
+    </footer>
   </div>
 </template>
 
@@ -60,6 +63,7 @@
         else {
           this.playersTurn = 1;
         }
+
       },
       mark: function (value) {
         let temp = "";
@@ -223,5 +227,16 @@
     border-top-color: #000000;
     border-top-style: solid;
     border-top-width: 2px;
+  }
+
+  footer {
+    width: 95%;
+    bottom: 1%;
+    position: fixed;
+    margin-top: 50%;
+  }
+
+  .footer-filler {
+    height: 1%;
   }
 </style>
